@@ -1,6 +1,6 @@
 package ua.com.juja.core;
 
-public class Parser {
+public class Parser1 {
     public static void main(String[] args) {
         System.out.println(eval("123"));
         System.out.println(eval("2*3"));
