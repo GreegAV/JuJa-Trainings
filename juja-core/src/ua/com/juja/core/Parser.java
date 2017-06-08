@@ -25,14 +25,10 @@ public class Parser {
                     char operation = expr.charAt(pos);
                     int rightOperand = eval(expr, pos + 1, to);
                     switch (operation) {
-                        case '+':
-                            return leftOperand + rightOperand;
-                        case '-':
-                            return leftOperand - rightOperand;
-                        case '*':
-                            return leftOperand * rightOperand;
-                        case '/':
-                            return leftOperand / rightOperand;
+                        case '+': return leftOperand + rightOperand;
+                        case '-': return leftOperand - rightOperand;
+                        case '*': return leftOperand * rightOperand;
+                        case '/': return leftOperand / rightOperand;
                     }
                 }
             }
