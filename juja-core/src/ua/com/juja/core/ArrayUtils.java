@@ -35,7 +35,7 @@ public class ArrayUtils {
             System.out.print("\n");
         }
         System.out.println("!!!!!!!!!!!!!!!!!!!!!!!");
-        a=rotateClockwise(a);
+        a=rotateClockwise(new String[0][]);
         for (int i=0; i<m; i++)
         {
             for (int j=0; j<m; j++)
@@ -48,6 +48,31 @@ public class ArrayUtils {
 
 
     public static String[][] rotateClockwise(String[][] arg) {
+
+        // TODO порефакторить это пиздец ифов.
+
+        if (arg == null) {
+            return null;
+        }
+        if (arg.length == 0) {
+            return null;
+        }
+        if (arg[0] == null) {
+            return null;
+        }
+        if (arg.length != arg[0].length) {
+            return null;
+        }
+        for (int i = 0, l = arg[i].length - 1; i < arg.length && l >= 0; i++, l--) {
+            if (arg[i] == null) {
+                return null;
+            }
+            if (i != 0 && arg[i].length != arg[i - 1].length) {
+                return null;
+            }
+        }
+// аж досюда.
+
         String tmp[][] = new String[arg.length][arg[0].length];
 
         for (int i = 0; i <arg.length ; i++) {
