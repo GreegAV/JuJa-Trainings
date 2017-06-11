@@ -26,7 +26,7 @@ public class MatrixMultiplection {
                 }
             }
         }
-sout
+
 
 //        for (int i = 0; i < res.length; i++) {
 //            for (int j = 0; j < res[0].length; j++) {
