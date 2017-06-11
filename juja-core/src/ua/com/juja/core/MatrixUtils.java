@@ -11,7 +11,7 @@ public class MatrixUtils {
 
         int[][] result = new int[fst.length][snd[0].length];
 
-        for ( int i = 0; i < result.length;; i++ ) {
+        for ( int i = 0; i < result.length; i++ ) {
             for ( int j = 0; j < result[0].length; j++ ) {
                 for ( int k = 0; k < fst[0].length; k++ ) {
                     result[i][j] += fst[i][k] * snd[k][j];
