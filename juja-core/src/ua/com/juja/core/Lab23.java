@@ -58,6 +58,35 @@ public class Lab23 {
 
     public static int[][][] rotateClockwise(int[][][] arg) {
         /*BODY*/
+        if (arg == null) {
+            return null;
+        }
+        if (arg.length == 0) {
+            return null;
+        }
+        if (arg[0] == null) {
+            return null;
+        }
+        if (arg[0].length == 0) {
+            return null;
+        }
+        if (arg[0][0] == null) {
+            return null;
+        }
+
+        for (int i1 = 0, k2 = 0; i1 < arg.length; i1++, k2++) {
+            if (arg[i1].length != arg.length) {
+                return null;
+            }
+            if (arg[i1] == null) {
+                return null;
+            }
+            for (int j1 = 0, i2 = 0; j1 < arg[i1].length; j1++, i2++) {
+                if (arg[i1][j1].length != arg[i1].length) {
+                    return null;
+                }
+            }
+        }
         int[][][] tmp = new int[arg.length][arg[0].length][arg[0][0].length];
         for (int i = 0; i <arg.length ; i++) {
             for (int j = 0; j <arg[0].length ; j++) {
