@@ -51,16 +51,16 @@ public class Lab22 {
 
         // TODO порефакторить это пиздец ифов.
 
-        if (arg == null) {
+        if ( arg == null ) {
             return null;
         }
-        if (arg.length == 0) {
+        if ( arg.length == 0 ) {
             return null;
         }
-        if (arg[0] == null) {
+        if ( arg[ 0 ] == null ) {
             return null;
         }
-        if (arg.length != arg[0].length) {
+        if ( arg.length != arg[ 0 ].length ) {
             return null;
         }
         for (int i = 0, l = arg[i].length - 1; i < arg.length && l >= 0; i++, l--) {
