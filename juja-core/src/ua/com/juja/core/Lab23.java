@@ -26,12 +26,48 @@ package ua.com.juja.core;
 
 public class Lab23 {
     public static void main(String[] args) {
+    int[][][] m2 = {
+            {{1, 2}, {3, 4}},
+            {{5, 6}, {7, 8}}
+    };
+    int[][][] m2t=null;
 
+        for (int i=0; i<m2.length; i++)
+        {
+            for (int j=0; j<m2[0].length; j++)
+            {
+                for (int k = 0; k <m2[0][0].length ; k++) {
+                    System.out.print(" "+ m2[i][j][k]);
+                }
+            }
+            System.out.print("\n");
+        }
+        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+    m2t=rotateClockwise(m2);
+        for (int i=0; i<m2t.length; i++)
+        {
+            for (int j=0; j<m2t[0].length; j++)
+            {
+                for (int k = 0; k <m2t[0][0].length ; k++) {
+                    System.out.print(" "+ m2t[i][j][k]);
+                }
+            }
+            System.out.print("\n");
+        }
     }
+
     public static int[][][] rotateClockwise(int[][][] arg) {
         /*BODY*/
+        int[][][] tmp = new int[arg.length][arg[0].length][arg[0][0].length];
+        for (int i = 0; i <arg.length ; i++) {
+            for (int j = 0; j <arg[0].length ; j++) {
+                for (int k = 0; k <arg[0][0].length ; k++) {
+                    tmp[i][j][k]=arg[k][i][j];
+                }
+            }
+        }
 
 
-        return arg;
+        return tmp;
     }
 }
