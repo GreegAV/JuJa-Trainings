@@ -3,7 +3,7 @@ package ua.com.juja.core;
 /**
  * Created by avg-m on 11/06/2017.
  */
-public class MatrixUtils {
+public class Lab21 {
     public static int[][] mul(int[][] fst, int[][] snd) {
         if ( fst == null || snd == null  || fst[0].length != snd.length ) {
             throw new IllegalArgumentException();
