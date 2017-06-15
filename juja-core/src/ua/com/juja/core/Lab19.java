@@ -1,6 +1,6 @@
 package ua.com.juja.core;
 
-public class CoinsChanger {
+public class Lab19 {
 
     public static void main(String[] args) {
         System.out.println(getCombinations(5));
