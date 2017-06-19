@@ -11,10 +11,10 @@ public class CoinsChangerTest {
 
     @Test
     public void test(){
-        assertEquals(4, CoinsChanger.getCombinations(5));
-        assertEquals(11, CoinsChanger.getCombinations(10));
-        assertEquals(3953, CoinsChanger.getCombinations(100));
-        assertEquals(58030, CoinsChanger.getCombinations(200));
+        assertEquals(4, Lab19.getCombinations(5));
+        assertEquals(11, Lab19.getCombinations(10));
+        assertEquals(3953, Lab19.getCombinations(100));
+        assertEquals(58030, Lab19.getCombinations(200));
 
     }
 }
