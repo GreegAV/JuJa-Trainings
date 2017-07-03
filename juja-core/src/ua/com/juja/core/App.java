@@ -12,7 +12,8 @@ public class App {
         // return a + new App().b;
         // return new App().b + a;
         // return a++ + a++;
-        return b++ + b++;
+        //return b++ + b++;
+        return 0;
     }
     public static void main(String[] args) {
         System.out.println(get());
