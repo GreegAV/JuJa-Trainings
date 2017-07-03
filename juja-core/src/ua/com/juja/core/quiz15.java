@@ -1,12 +1,6 @@
 package ua.com.juja.core;
 
 
-
-
-
-
-
-
 //quiz15.24
 class Parent {
     static String first() {
